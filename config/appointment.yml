@@ -6,7 +6,7 @@ spring:
   application:
     name: appointment-management
   datasource:
-    url: jdbc:postgresql://192.168.0.7:5550/postgres
+    url: jdbc:postgresql://10.43.100.173:3002/postgres
     username:  appointment
     password: password
     driver-class-name: org.postgresql.Driver
@@ -20,7 +20,7 @@ spring:
     generate-ddl: true
     #open-in-view: true
   activemq:
-    broker-url: tcp://192.168.0.7:61616
+    broker-url: tcp://10.43.100.173:3016
     user: admin
     password: admin
     pool:
@@ -30,7 +30,7 @@ spring:
     oauth2:
      resourceserver:
        jwt:
-         jwk-set-uri: http://192.168.0.7:8091/auth/realms/appointment-realm/protocol/openid-connect/certs  
+         jwk-set-uri: http://10.43.100.173:3003/auth/realms/appointment-realm/protocol/openid-connect/certs  
 
 management:
   endpoints:
