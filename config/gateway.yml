@@ -6,7 +6,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri:  http://192.168.0.7:8091/auth/realms/appointment-realm/protocol/openid-connect/certs  
+          jwk-set-uri:  http://10.43.100.173:3003/auth/realms/appointment-realm/protocol/openid-connect/certs  
 
 management:
   endpoints:
@@ -17,11 +17,11 @@ management:
         
 endpoint:
      availability:
-         manager: http://localhost:9191/appointment/availability
+         manager: http://appointmentmanagement:3002/appointment/availability
      booking:
-         manager: http://localhost:9191/appointment/booking
+         manager: http://appointmentmanagement:3002/appointment/booking
      cancel:
-         manager: http://localhost:9191/appointment/cancel
+         manager: http://appointmentmanagement:3002/appointment/cancel
      find:
-         manager: http://localhost:9191/appointment/find  
+         manager: http://appointmentmanagement:3002/appointment/find  
               
