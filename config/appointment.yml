@@ -1,6 +1,7 @@
 server:
-  port: 9191
-  jetty:    max-http-form-post-size: 10000000
+  port: 3001
+  jetty:
+    max-http-form-post-size: 10000000
 spring:
   application:
     name: appointment-management
@@ -32,7 +33,12 @@ spring:
          jwk-set-uri: http://192.168.0.7:8091/auth/realms/appointment-realm/protocol/openid-connect/certs  
 
 management:
-  endpoints:    web:      exposure:        include:        - "*"  metrics:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+  metrics:
       export:
          prometheus:
               enabled: true
