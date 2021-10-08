@@ -14,11 +14,11 @@ spring:
 
 endpoint:
   availability:
-      ips: http://ipsmockup:3003/ips/availability
+      ips: http://ipsmockup:3004/ips/availability
   booking:
-      ips: http://ipsmockup:3003/ips/booking
+      ips: http://ipsmockup:3004/ips/booking
   cancel:
-      ips: http://ipsmockup:3003/ips/cancel    
+      ips: http://ipsmockup:3004/ips/cancel    
 management:
   endpoints: 
     web:
