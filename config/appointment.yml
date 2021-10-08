@@ -30,7 +30,7 @@ spring:
     oauth2:
      resourceserver:
        jwt:
-         jwk-set-uri: http://10.43.100.173:3003/auth/realms/appointment-realm/protocol/openid-connect/certs  
+         jwk-set-uri: http://10.43.100.173:3003/auth/realms/Appointment-realm/protocol/openid-connect/certs  
 
 management:
   endpoints:
