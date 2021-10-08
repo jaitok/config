@@ -1,0 +1,27 @@
+server:
+  port: 9192
+
+spring:
+  application:
+    name: interoperability
+  activemq:
+    broker-url: tcp://192.168.0.7:61616
+    user: admin
+    password: admin
+    pool:
+      enabled: false
+      max-connections: 10
+
+endpoint:
+  availability:
+      ips: http://localhost:9193/ips/availability
+  booking:
+      ips: http://localhost:9193/ips/booking
+  cancel:
+      ips: http://localhost:9193/ips/cancel    
+management:
+  endpoints: 
+    web:
+      exposure: 
+        include:
+        - "*"      

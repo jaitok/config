@@ -1,0 +1,11 @@
+server:
+  port: 9193
+spring:
+  application:
+    name: ipsMock
+management:
+  endpoints: 
+    web:
+      exposure: 
+        include:
+        - "*" 
