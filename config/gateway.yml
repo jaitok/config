@@ -1,39 +1,26 @@
 server:
-  port: 9191
-  jetty:    max-http-form-post-size: 10000000
+   port: 8083
+
 spring:
-  application:
-    name: appointment-management
-  datasource:
-    url: jdbc:postgresql://192.168.0.7:5550/postgres
-    username:  appointment
-    password: password
-    driver-class-name: org.postgresql.Driver
-    type: com.zaxxer.hikari.HikariDataSource
-    # Hikari
-    hikari:
-      maximum-pool-size: 10 
-  jpa:
-    hibernate:
-      ddl-auto: none 
-    generate-ddl: true
-    #open-in-view: true
-  activemq:
-    broker-url: tcp://192.168.0.7:61616
-    user: admin
-    password: admin
-    pool:
-      enabled: false
-      max-connections: 10
   security:
     oauth2:
-     resourceserver:
-       jwt:
-         jwk-set-uri: http://192.168.0.7:8091/auth/realms/appointment-realm/protocol/openid-connect/certs  
+      resourceserver:
+        jwt:
+          jwk-set-uri:  http://192.168.0.7:8091/auth/realms/appointment-realm/protocol/openid-connect/certs  
 
 management:
-  endpoints:    web:      exposure:        include:        - "*"  metrics:
-      export:
-         prometheus:
-              enabled: true
-              
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+        
+endpoint:
+     availability:
+         manager: http://localhost:9191/appointment/availability
+     booking:
+         manager: http://localhost:9191/appointment/booking
+     cancel:
+         manager: http://localhost:9191/appointment/cancel
+     find:
+         manager: http://localhost:9191/appointment/find  
