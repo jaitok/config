@@ -2,7 +2,7 @@ server:
   port: 3004
 spring:
   application:
-    name: ipsMock
+    name: ipsmock
 management:
   endpoints: 
     web:
