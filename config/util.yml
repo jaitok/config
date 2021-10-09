@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: appointment-management
+    name: util
   datasource:
     url: jdbc:postgresql://10.43.100.173:3002/affiliate
     username:  appointment
