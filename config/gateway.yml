@@ -24,4 +24,8 @@ endpoint:
          manager: http://appointmentmanagement:3002/appointment/cancel
      find:
          manager: http://appointmentmanagement:3002/appointment/find  
+     ips:
+         manager: http://localhost:3035/ips
+     cups: 
+         manager: http://localhost:3035/cups
               
