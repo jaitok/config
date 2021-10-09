@@ -1,11 +1,11 @@
 server:
-  port: 9192
+  port: 3003
 
 spring:
   application:
     name: interoperability
   activemq:
-    broker-url: tcp://192.168.0.7:61616
+    broker-url: tcp://10.43.100.173:3016
     user: admin
     password: admin
     pool:
@@ -14,11 +14,11 @@ spring:
 
 endpoint:
   availability:
-      ips: http://localhost:9193/ips/availability
+      ips: http://ipsmockup:3004/ips/availability
   booking:
-      ips: http://localhost:9193/ips/booking
+      ips: http://ipsmockup:3004/ips/booking
   cancel:
-      ips: http://localhost:9193/ips/cancel    
+      ips: http://ipsmockup:3004/ips/cancel    
 management:
   endpoints: 
     web:
