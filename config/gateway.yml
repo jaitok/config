@@ -26,6 +26,6 @@ endpoint:
          manager: http://appointmentmanagement:3002/appointment/find  
      ips:
          manager: http://localhost:3035/ips
-     cups: 
+     cubs: 
          manager: http://localhost:3035/cups
               
