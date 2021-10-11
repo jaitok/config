@@ -5,7 +5,7 @@ spring:
   application:
     name: util
   datasource:
-    url: jdbc:postgresql://10.43.100.173:3002/affiliate
+    url: jdbc:postgresql://10.43.100.173:3002/util
     username:  appointment
     password: password
     driver-class-name: org.postgresql.Driver
