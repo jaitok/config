@@ -1,0 +1,20 @@
+server:
+  port: 3036
+
+spring:
+  application:
+    name: util
+  datasource:
+    url: jdbc:postgresql://10.43.100.173:3002/affiliate
+    username:  appointment
+    password: password
+    driver-class-name: org.postgresql.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    # Hikari
+    hikari:
+      maximum-pool-size: 10 
+  jpa:
+    hibernate:
+      ddl-auto: none 
+    generate-ddl: true
+    #open-in-view: true
