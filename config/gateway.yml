@@ -25,12 +25,12 @@ endpoint:
      find:
          manager: http://appointmentmanagement:3002/appointment/find  
      ips:
-         manager: http://localhost:3035/ips
+         manager: http://util:3035/ips
      cubs: 
-         manager: http://localhost:3035/cups
+         manager: http://util:3035/cups
      affiliate:
-         manager: http://localhost:3036/affiliate/new
+         manager: http://affiliate:3036/affiliate/new
      autorization:    
-         manager: http://localhost:3036/affiliate/autentication 
+         manager: http://affiliate:3036/affiliate/autentication 
      findaffiiate:
-         manager: http://localhost:3036/affiliate/findbyidentification
+         manager: http://affiliate:3036/affiliate/findbyidentification
