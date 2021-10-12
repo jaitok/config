@@ -18,3 +18,19 @@ spring:
       ddl-auto: none 
     generate-ddl: true
     #open-in-view: true
+  security:
+    oauth2:
+     resourceserver:
+       jwt:
+         jwk-set-uri: http://10.43.100.173:3003/auth/realms/Appointment-realm/protocol/openid-connect/certs  
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+  metrics:
+      export:
+         prometheus:
+              enabled: true
