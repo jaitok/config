@@ -18,7 +18,10 @@ endpoint:
   booking:
       ips: http://ipsmockup:3004/ips/booking
   cancel:
-      ips: http://ipsmockup:3004/ips/cancel    
+      ips: http://ipsmockup:3004/ips/cancel
+  notification:
+      booking: http://notification:80/V1/CorreoElectronico/EmailReservarCita
+      cancel: http://notification:80/V1/CorreoElectronico/EmailCancelarCita
 management:
   endpoints: 
     web:
